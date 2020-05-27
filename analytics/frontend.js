@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const initGA = async () => {
     // console.log('GA init');
-    let response = await axios.get('/api/fetch-ga-id.js');
+    let response = await axios.get('/api/fetch-ga-id');
     let { id } = response.data;
     ReactGA.initialize(id);
 };
