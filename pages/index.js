@@ -40,7 +40,7 @@ export default class Home extends React.Component {
 
                     <p className="description">
                         {/*<span>Find hospitals near you that are seeking PPE donations | </span>*/}
-                        <span>API to check if your API endpoint is malaware</span>
+                        <span>API to check if your API endpoints contain malaware</span>
                         <br/>
                         {/*<img src="/Octicons-mark-github.svg" alt="github logo"/>*/}
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/amadrzyk/COVID19-BlockList">

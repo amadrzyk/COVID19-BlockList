@@ -1,9 +1,15 @@
+# Description
+This API endpoint will help you filter out malware from a list of URLs. Our data
+is fetched from https://www.cyberthreatcoalition.org/, a coalition of professionals dedicated
+to enforcing cyber-security and reducing malware (especially relating to the pandemic).
+
 # Usage
 ### Request
 ```
 import axios from 'axios'
 
-const response = (await axios.post('/api/check-blocklist', {
+const domain = 'https://covidblocklist.now.sh/';
+const response = (await axios.post(`${domain}/api/check-blocklist`, {
     endpoints: [
         "google.com",
         "facebook.com",
