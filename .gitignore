@@ -2,3 +2,5 @@ node_modules
 .next
 .idea
 .DS_STORE
+next.config.js
+yarn.lock
