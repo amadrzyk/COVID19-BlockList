@@ -28,6 +28,13 @@ export default async (req, res) => {
 			unsafe: []
 		};
 		let endpoints = req.body.endpoints || [];
+
+		// if not an array, make it into one
+		if (typeof endpoints === 'string'){
+			endpoints = [endpoints];
+		}
+
+		// clean up endpoints
 		endpoints = endpoints.map(endpoint => endpoint.trim());
 
 		// download blocklist
